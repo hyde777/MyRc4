@@ -1,3 +1,9 @@
+#VS
+.vs/*
+*/Debug/*
+Debug/*
+*.user
+
 # Prerequisites
 *.d
 
