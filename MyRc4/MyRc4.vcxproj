@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="MyRc4.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyRc4.cpp" />
