@@ -1,2 +1,5 @@
 [submodule "MyRc4/src/benchmark"]
 	url = https://github.com/google/benchmark
+[submodule "MyRc4/src/googletest"]
+	path = MyRc4/src/googletest
+	url = https://github.com/abseil/googletest
