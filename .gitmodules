@@ -1,0 +1,2 @@
+[submodule "MyRc4/src/benchmark"]
+	url = https://github.com/google/benchmark
