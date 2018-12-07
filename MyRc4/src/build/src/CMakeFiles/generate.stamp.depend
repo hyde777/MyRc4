@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.13/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/WriteBasicConfigVersionFile.cmake
+D:/Project/C++/MyRc4/MyRc4/src/benchmark/cmake/Config.cmake.in
+D:/Project/C++/MyRc4/MyRc4/src/benchmark/cmake/benchmark.pc.in
+D:/Project/C++/MyRc4/MyRc4/src/benchmark/src/CMakeLists.txt

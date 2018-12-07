@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Project\C++\MyRc4\MyRc4\src\benchmark\test\skip_with_error_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\C++\MyRc4\MyRc4\src\benchmark\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2C0FC58E-D14B-3DE3-B863-449F5DC4A33F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
