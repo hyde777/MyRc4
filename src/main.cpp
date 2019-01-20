@@ -128,14 +128,14 @@ void useRc4(char* option, unsigned char* key, string inputFile, const char* outp
 
 	cout << "Your file got " << optionInfo << endl;
 
-	ofstream out(outputFile);
+	ofstream out(outputFile + optionInfo);
 	out << outputTxt;
 	out.close();
 
 	clock_t end = clock();
 
 	double elapsed = end - begin;
-	cout << "elapsed=" << elapsed << endl;
+	cout << "Elapsed time = " << elapsed << endl;
 }
 
 //-e 2 .\doc\testfile.txt .\doc\testfile.rc4.txt
