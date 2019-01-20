@@ -5,12 +5,10 @@
 #include "./main.h"
 
 #include <iostream>
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstring>
+#include <cstdlib>
 #include <iostream>
 #include <fstream>
-#include <queue>
 #include <thread>
 #include <mutex>
 #include <condition_variable>
@@ -120,7 +118,7 @@ void useRc4(char* option, unsigned char* key, string inputFile, const char* outp
 	int beginLimit = 0, endLimit = 0;
 
 	// BUG: Ne crypte que la 1ere ligne et la portion diviser par le nombre de thread...
-	for (unsigned int i = 0; i < nbThreads; i++) 
+	for (int i = 0; i < nbThreads; i++) 
 	{
 		beginLimit = ((i == 0) ? 0 : (sizeOfInput / nbThreads) * i);
 		endLimit = ((i == nbThreads - 1) ? sizeOfInput : (sizeOfInput / nbThreads) * (i + 1));
