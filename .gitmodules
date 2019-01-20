@@ -1,6 +1,3 @@
-[submodule "src/benchmark"]
-	path = /src/benchmark
-	url = https://github.com/google/benchmark
 [submodule "src/googletest"]
 	path = /src/googletest
 	url = https://github.com/abseil/googletest
