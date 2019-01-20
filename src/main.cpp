@@ -20,7 +20,6 @@ using namespace std;
 
 MyRc4::MyRc4() {}
 
-// we just have to separate input from output here
 void MyRc4::prga(unsigned char* plaintext, unsigned char* cipher, int begin, int ending) 
 {
 	for (int k = begin; k < ending; k++) 
@@ -117,7 +116,6 @@ void useRc4(char* option, unsigned char* key, string inputFile, const char* outp
 	char* inputTxt = const_cast<char*>(inputFile.c_str());
 	int beginLimit = 0, endLimit = 0;
 
-	// BUG: Ne crypte que la 1ere ligne et la portion diviser par le nombre de thread...
 	for (int i = 0; i < nbThreads; i++) 
 	{
 		beginLimit = ((i == 0) ? 0 : (sizeOfInput / nbThreads) * i);
@@ -126,11 +124,11 @@ void useRc4(char* option, unsigned char* key, string inputFile, const char* outp
 		myThread.join();
 	}
 
-	cout << "Your file got " << optionInfo << endl;
-
-	ofstream out(outputFile + optionInfo);
+	ofstream out(outputFile + '.' + optionInfo + ".txt");
 	out << outputTxt;
 	out.close();
+
+	cout << "Your file got " << optionInfo << endl;
 
 	clock_t end = clock();
 
@@ -138,8 +136,6 @@ void useRc4(char* option, unsigned char* key, string inputFile, const char* outp
 	cout << "Elapsed time = " << elapsed << endl;
 }
 
-//-e 2 .\doc\testfile.txt .\doc\testfile.rc4.txt
-//-d 2 .\doc\testfile.rc4.txt .\doc\testfile.rc4.decrypt.txt
 int main(int argc, char** argv) 
 {
 	if(argc != 5) 
